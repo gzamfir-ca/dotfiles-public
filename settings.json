@@ -1,0 +1,45 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.fontWeight": "500",
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.path": "/usr/local/bin/git",
+  "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.fontAliasing": "auto",
+  "workbench.iconTheme": "ayu",
+  "eslint.probe": ["javascript", "typescript"],
+  "[javascript]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ],
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.eslint"
+    ],
+    "editor.formatOnSave": false
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "castwide.solargraph"
+  },
+  "ruby.useLanguageServer": true,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": true,
+  "solargraph.commandPath": "/Users/georgezamfir/.rbenv/shims/solargraph"
+}

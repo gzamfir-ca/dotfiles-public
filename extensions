@@ -1,0 +1,8 @@
+code --install-extension castwide.solargraph
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension kaiwood.endwise
+code --install-extension rebornix.ruby
+code --install-extension rohit-gohri.format-code-action
+code --install-extension teabyii.ayu
+code --install-extension wingrunr21.vscode-ruby
