@@ -1,0 +1,18 @@
+# Configure package manager
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Configure java environment
+export JAVA_HOME=$(/usr/libexec/java_home --version 17)
+export M2_HOME=$(readlink -f /opt/homebrew/opt/maven/libexec)
+
+# Configure node environment
+eval "$(nodenv init -)"
+
+# Configure ruby environment
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/libyaml/include"
+export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/libyaml/lib"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1 --with-readline-dir=/opt/homebrew/opt/readline --with-libyaml-dir=/opt/homebrew/opt/libyaml"
+eval "$(rbenv init -)"
+
+# Configure ocaml environment
+eval "$(opam env --switch=default)"

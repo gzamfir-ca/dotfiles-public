@@ -1,0 +1,15 @@
+# Configure java environment
+export JAVA_HOME=$(/usr/libexec/java_home --version 17)
+export M2_HOME=$(readlink -f /usr/local/opt/maven/libexec)
+
+# Configure node environment
+eval "$(nodenv init -)"
+
+# Configure ruby environment
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1 --with-readline-dir=/usr/local/opt/readline --with-libyaml-dir=/usr/local/opt/libyaml"
+eval "$(rbenv init -)"
+
+# Configure ocaml environment
+eval "$(opam env --switch=default)"

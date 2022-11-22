@@ -1,0 +1,97 @@
+# Configure shell environment
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd beep extendedglob nomatch notify
+bindkey -e
+
+# Configure shell completion
+zstyle :compinstall filename '/Users/georgezamfir/.zshrc'
+autoload -Uz compinit
+compinit
+
+# Configure shell prompt
+fpath+=/usr/local/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure
+
+# Configure shell extensions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Configure key bindings
+bindkey '^ ' autosuggest-accept
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Configure shell colors
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+export GREP_COLOR='1;35'
+export GREP_OPTIONS='--color=auto'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=yellow"
+
+# Configure shell aliases
+alias .='cd ../'
+alias ..='cd ../../'
+alias ...='cd ../../../'
+alias -- -='cd -'
+alias al='alias'
+alias bi='brew install --verbose'
+alias bl='brew deps --installed --tree $(brew leaves)'
+alias bu='brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
+alias c.='code .'
+alias cb='clang++ -std=c++11 -stdlib=libc++ -o'
+alias cd='(){builtin cd "${1}" && la}'
+alias cl='clear'
+alias cm='tar -czvf'
+alias cp='cp -nv'
+alias ct='cat -et'
+alias d.='df -h .'
+alias dl='diskutil list'
+alias ds='du -h'
+alias en='env | sort'
+alias g~='cd "$(git rev-parse --show-toplevel)"'
+alias ga='git config --get-regexp "^alias\."'
+alias gi='gem install'
+alias gl='gem list --local --no-details | grep -v "default:"'
+alias gr='grep -ni'
+alias gu='gem update --system && gem update --conservative && gem cleanup'
+alias hi='history'
+alias kd='ksdiff'
+alias la='ls -Fhla'
+alias ll='ls -Fhl'
+alias ln='ln -sv'
+alias lt='ls -Fhlt'
+alias ls='ls -1'
+alias mc='(){mkdir -pv "${1}" && cd "${1}"}'
+alias md='(){mkdir -pv "${@}" && la}'
+alias mi='npm install --location=global'
+alias ml='npm list --location=global --depth 1'
+alias mr='npm run'
+alias mu='npm install npm --location=global && npm update --location=global'
+alias mv='mv -nv'
+alias o.='open .'
+alias oi='opam install'
+alias ol='opam list'
+alias ou='opam update && opam upgrade'
+alias pd='(){builtin pwd}'
+alias rm='rm -iv'
+alias st='stat -x'
+alias tl='tail -n 50 -F'
+alias to='touch'
+alias tp='top -R -F -s 10 -o rsize'
+alias tr='tree -a'
+alias up='uptime'
+alias w-='chmod u-w'
+alias wl='wc -l'
+alias x+='chmod u+x'
+alias xp='tar -xvf'
+alias xt='exit'
+
+# Configure racket environment
+path=("/Applications/Racket v8.7/bin" $path)
+
+# Configure ghcup environment
+source /Users/georgezamfir/.ghcup/env

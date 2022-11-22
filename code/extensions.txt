@@ -1,0 +1,15 @@
+castwide.solargraph
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+haskell.haskell
+jit-y.vscode-advanced-open-file
+justusadam.language-haskell
+kaiwood.endwise
+mads-hartmann.bash-ide-vscode
+ocamllabs.ocaml-platform
+rebornix.ruby
+rohit-gohri.format-code-action
+sainnhe.sonokai
+Tyriar.sort-lines
+vscode-icons-team.vscode-icons
+wingrunr21.vscode-ruby
