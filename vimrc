@@ -1,7 +1,6 @@
 " Setup vim package manager
 set nocompatible
 call plug#begin()
-Plug 'sainnhe/sonokai'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
@@ -9,7 +8,6 @@ call plug#end()
 let g:sonokai_better_performance = 1
 let g:sonokai_disable_italic_comment = 1
 let g:sonokai_transparent_background = 1
-colorscheme sonokai
 set list listchars+=space:. listchars-=eol:$
 set cursorline
 set display=lastline
