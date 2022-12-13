@@ -5,10 +5,6 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Setup main visual outlook
-let g:sonokai_better_performance = 1
-let g:sonokai_disable_italic_comment = 1
-let g:sonokai_transparent_background = 1
-set list listchars+=space:. listchars-=eol:$
 set cursorline
 set display=lastline
 set hidden
@@ -39,7 +35,7 @@ set backupext=-back
 set backupskip=
 set directory=/Users/georgezamfir/.vim/files/swap//
 set updatecount=100
-set updatetime =2000
+set updatetime=2000
 
 " Setup external shell prog
 set shell=/bin/bash
