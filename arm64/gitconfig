@@ -5,7 +5,6 @@
 	bl="!git branch --all"
 	bn="!git checkout -b"
 	br="!git branch -M"
-	cl="!git clone --verbose"
 	cm="!git add -A && git commit -m"
 	co="!git checkout"
 	dr="!git add -A --dry-run"
