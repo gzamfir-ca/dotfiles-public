@@ -78,6 +78,7 @@ alias oi='opam install'
 alias ol='opam list'
 alias ou='opam update && opam upgrade'
 alias pd='(){builtin pwd}'
+alias pv='(){python3 -m venv "${1}" && source "${1}/bin/activate"}'
 alias rl='exec zsh'
 alias rm='rm -iv'
 alias st='stat -x'
@@ -86,11 +87,16 @@ alias to='touch'
 alias tp='top -R -F -s 10 -o rsize'
 alias tr='tree -a'
 alias up='uptime'
+alias va='(){source "${1}/bin/activate"}'
+alias vd='deactivate'
 alias w-='chmod u-w'
 alias wl='wc -l'
 alias x+='chmod u+x'
 alias xp='tar -xvf'
 alias xt='exit'
+
+# Configure python environment
+path=("/opt/homebrew/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
 path=("/Applications/Racket v8.7/bin" $path)
