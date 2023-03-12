@@ -16,6 +16,7 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
+    "erb": "html",
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
@@ -75,6 +76,6 @@
     ],
     "editor.formatOnSave": false
   },
-  "workbench.colorTheme": "Sonokai Andromeda",
+  "workbench.colorTheme": "Sonokai Atlantis",
   "workbench.iconTheme": "vscode-icons"
 }

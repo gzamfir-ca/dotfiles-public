@@ -8,6 +8,7 @@ kaiwood.endwise
 mads-hartmann.bash-ide-vscode
 ocamllabs.ocaml-platform
 rebornix.ruby
+redhat.vscode-yaml
 rohit-gohri.format-code-action
 sainnhe.sonokai
 Tyriar.sort-lines
