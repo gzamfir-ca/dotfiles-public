@@ -1,6 +1,9 @@
+alefragnani.Bookmarks
+aliariff.auto-add-brackets
 castwide.solargraph
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
+Gruntfuggly.todo-tree
 haskell.haskell
 jit-y.vscode-advanced-open-file
 justusadam.language-haskell
