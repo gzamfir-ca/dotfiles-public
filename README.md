@@ -6,11 +6,12 @@
 
 ### Usage
 
-- Expects homebrew, bundle, zshell, git, vim, iterm2 installed
+- Expects brew, bundle, code, git, iterm2, rsync, vim, zshell
 
 - If you are on apple architecture setup environment like so:
 
 ```
+❯ cd ~
 ❯ mv dotfiles-public ~/.dotfiles
 ❯ ln -sfn ~/.dotfiles/arm64/gitconfig ~/.gitconfig
 ❯ ln -sfn ~/.dotfiles/arm64/zprofile ~/.zprofile
@@ -21,6 +22,7 @@
 - If you are on intel architecture setup environment like so:
 
 ```
+❯ cd ~
 ❯ mv dotfiles-public ~/.dotfiles
 ❯ ln -sfn ~/.dotfiles/i386/gitconfig ~/.gitconfig
 ❯ ln -sfn ~/.dotfiles/i386/zprofile ~/.zprofile
@@ -38,6 +40,13 @@
 ```
 
 then download the plug.vim in the autoload folder and do :PlugInstall
+
+- Install & configure custom command line utilities like so:
+
+```
+❯ cd /usr/local/bin
+❯ ln -sfn ~/.dotfiles/bin/zsync ./zsync
+```
 
 - Finally install & configure code using the following steps:
 
