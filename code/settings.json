@@ -76,6 +76,6 @@
     ],
     "editor.formatOnSave": false
   },
-  "workbench.colorTheme": "Sonokai Atlantis",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons"
 }
