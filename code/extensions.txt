@@ -1,5 +1,6 @@
 alefragnani.Bookmarks
 aliariff.auto-add-brackets
+bradlc.vscode-tailwindcss
 castwide.solargraph
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
@@ -13,7 +14,7 @@ ocamllabs.ocaml-platform
 rebornix.ruby
 redhat.vscode-yaml
 rohit-gohri.format-code-action
-sainnhe.sonokai
 Tyriar.sort-lines
-vscode-icons-team.vscode-icons
 wingrunr21.vscode-ruby
+Yummygum.city-lights-icon-vsc
+zhuangtongfa.material-theme
