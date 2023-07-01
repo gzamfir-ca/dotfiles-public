@@ -14,7 +14,7 @@ ocamllabs.ocaml-platform
 rebornix.ruby
 redhat.vscode-yaml
 rohit-gohri.format-code-action
+teabyii.ayu
 Tyriar.sort-lines
 wingrunr21.vscode-ruby
-Yummygum.city-lights-icon-vsc
 zhuangtongfa.material-theme
