@@ -75,9 +75,6 @@ alias mr='npm run'
 alias mu='npm install npm --location=global && npm update --location=global'
 alias mv='mv -nv'
 alias o.='open .'
-alias oi='opam install'
-alias ol='opam list'
-alias ou='opam update && opam upgrade'
 alias pd='(){builtin pwd}'
 alias pv='(){python3 -m venv "${1}" && source "${1}/bin/activate"}'
 alias rl='exec zsh'
@@ -102,6 +99,3 @@ path=("/usr/local/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
 path=("/Applications/Racket v8.9/bin" $path)
-
-# Configure ghcup environment
-source /Users/georgezamfir/.ghcup/env
