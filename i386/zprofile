@@ -2,7 +2,7 @@
 export HOMEBREW_NO_INSTALL_FROM_API=1
 
 # Configure java environment
-export JAVA_HOME=$(/usr/libexec/java_home --version 17)
+export JAVA_HOME=$(/usr/libexec/java_home)
 export GRADLE_HOME=$(readlink -f /usr/local/opt/gradle/libexec)
 export M2_HOME=$(readlink -f /usr/local/opt/maven/libexec)
 

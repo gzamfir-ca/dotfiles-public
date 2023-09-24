@@ -38,6 +38,7 @@ alias ..='cd ../../'
 alias ...='cd ../../../'
 alias -- -='cd -'
 alias al='alias'
+alias bd='brew doctor --verbose'
 alias bi='brew install --verbose'
 alias bl='brew deps --installed --tree $(brew leaves)'
 alias bu='brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
@@ -59,7 +60,7 @@ alias gc='(){git clone --verbose "${1}" && cd $(basename "${1%%.git}")}'
 alias gi='gem install'
 alias gl='gem list --local --no-details | grep -v "default:"'
 alias gr='grep -ni'
-alias gu='gem update --system && gem update --conservative && gem cleanup'
+#alias gu='gem update --system && gem update --conservative && gem cleanup'
 alias hi='history'
 alias kd='ksdiff'
 alias la='ls -Fhla'
@@ -98,4 +99,4 @@ alias xt='exit'
 path=("/usr/local/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
-path=("/Applications/Racket v8.9/bin" $path)
+path=("/Applications/Racket v8.10/bin" $path)
