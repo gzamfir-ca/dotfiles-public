@@ -1,4 +1,18 @@
 {
+  "auto-close-tag.activationOnLanguage": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "erb"
+  ],
+  "auto-rename-tag.activationOnLanguage": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "erb"
+  ],
   "editor.bracketPairColorization.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
@@ -15,9 +29,9 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
-    "erb": "html",
     "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
+    "typescript": "typescriptreact",
+    "erb": "html"
   },
   "emmet.triggerExpansionOnTab": true,
   "eslint.probe": [
@@ -49,6 +63,8 @@
     ],
     "editor.formatOnSave": false
   },
+  "npm-intellisense.scanDevDependencies": true,
+  "npm-intellisense.showBuildInLibs": true,
   "[ruby]": {
     "editor.defaultFormatter": "castwide.solargraph"
   },
