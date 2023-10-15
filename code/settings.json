@@ -68,7 +68,6 @@
   "[ruby]": {
     "editor.defaultFormatter": "castwide.solargraph"
   },
-  "ruby.useLanguageServer": true,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
   "telemetry.telemetryLevel": "off",
