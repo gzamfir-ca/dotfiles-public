@@ -13,6 +13,7 @@
     "typescriptreact",
     "erb"
   ],
+  "css.validate": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
@@ -28,6 +29,9 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
@@ -42,6 +46,7 @@
   ],
   "extensions.ignoreRecommendations": true,
   "files.associations": {
+    ".css": "tailwindcss",
     ".env*": "shellscript"
   },
   "files.autoSave": "afterDelay",
@@ -70,6 +75,12 @@
   },
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "erb": "html"
+  },
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "'Fira Code'",
