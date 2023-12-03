@@ -54,6 +54,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.path": "/usr/bin/git",
+  "haskell.manageHLS": "GHCup",
   "[javascript]": {
     "editor.codeActionsOnSave": [
       "source.formatDocument",
