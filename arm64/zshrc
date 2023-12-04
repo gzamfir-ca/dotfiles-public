@@ -101,3 +101,7 @@ path=("/opt/homebrew/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
 path=("/Applications/Racket v8.11.1/bin" $path)
+
+# Configure ghcup environment
+path=("/opt/homebrew/opt/llvm@12/bin" $path)
+source /Users/georgezamfir/.ghcup/env
