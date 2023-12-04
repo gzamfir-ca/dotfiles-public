@@ -100,4 +100,4 @@ alias xt='exit'
 path=("/opt/homebrew/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
-path=("/Applications/Racket v8.11/bin" $path)
+path=("/Applications/Racket v8.11.1/bin" $path)
