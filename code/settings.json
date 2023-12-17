@@ -102,5 +102,6 @@
     "editor.formatOnSave": false
   },
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "ayu"
+  "workbench.iconTheme": "ayu",
+  "terminal.integrated.defaultProfile.osx": "zsh"
 }
