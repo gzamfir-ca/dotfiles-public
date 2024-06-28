@@ -100,7 +100,7 @@ alias xt='exit'
 path=("/usr/local/opt/python@3.11/libexec/bin" $path)
 
 # Configure racket environment
-path=("/Applications/Racket v8.12/bin" $path)
+path=("/Applications/Racket v8.13/bin" $path)
 
 # Configure ghcup environment
 source /Users/georgezamfir/.ghcup/env
