@@ -84,9 +84,9 @@
   },
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "'Fira Code'",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "FiraCode-Retina",
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontWeight": "450",
   "[typescript]": {
     "editor.codeActionsOnSave": [
       "source.formatDocument",
@@ -102,6 +102,5 @@
     "editor.formatOnSave": false
   },
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "ayu",
-  "terminal.integrated.defaultProfile.osx": "zsh"
+  "workbench.iconTheme": "ayu"
 }
