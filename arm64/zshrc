@@ -22,8 +22,8 @@ source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-se
 
 # Configure key bindings
 bindkey '^ ' autosuggest-accept
-bindkey ';5A' history-substring-search-up
-bindkey ';5B' history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Configure shell colors
 export CLICOLOR=1
@@ -44,7 +44,6 @@ alias bl='brew deps --installed --tree $(brew leaves)'
 alias bs='brew services'
 alias bu='brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 alias c.='code .'
-alias cb='clang++ -std=c++11 -stdlib=libc++ -o'
 alias cd='(){builtin cd "${1}" && la}'
 alias cl='clear'
 alias cm='tar -czvf'
@@ -54,16 +53,14 @@ alias d.='df -h .'
 alias dl='diskutil list'
 alias ds='du -h'
 alias en='env | sort'
-alias fw='fswatch'
 alias g~='cd "$(git rev-parse --show-toplevel)"'
 alias ga='git config --get-regexp "^alias\."'
 alias gc='(){git clone --verbose "${1}" && cd $(basename "${1%%.git}")}'
 alias gi='gem install'
 alias gl='gem list --local --no-details | grep -v "default:"'
 alias gr='grep -ni'
-#alias gu='gem update --system && gem update --conservative && gem cleanup'
+alias gu='gem update --system && gem update && gem cleanup'
 alias hi='history'
-alias kd='ksdiff'
 alias la='ls -Fhla'
 alias ll='ls -Fhl'
 alias ln='ln -sv'
@@ -78,7 +75,6 @@ alias mu='npm install npm --location=global && npm update --location=global'
 alias mv='mv -nv'
 alias o.='open .'
 alias pd='(){builtin pwd}'
-alias pv='(){python3 -m venv "${1}" && source "${1}/bin/activate"}'
 alias rl='exec zsh'
 alias rm='rm -iv'
 alias st='stat -x'
@@ -88,20 +84,14 @@ alias tp='top -R -F -s 10 -o rsize'
 alias tr='tree -a'
 alias tt='(){mv -nv "${@}" /Users/georgezamfir/.Trash}'
 alias up='uptime'
-alias va='(){source "${1}/bin/activate"}'
-alias vd='deactivate'
 alias w-='chmod u-w'
 alias wl='wc -l'
 alias x+='chmod u+x'
 alias xp='tar -xvf'
 alias xt='exit'
 
-# Configure python environment
-path=("/opt/homebrew/opt/python@3.11/libexec/bin" $path)
+# Configure psql16 environment
+path=("/opt/homebrew/opt/postgresql@16/bin" $path)
 
 # Configure racket environment
-path=("/Applications/Racket v8.13/bin" $path)
-
-# Configure ghcup environment
-path=("/opt/homebrew/opt/llvm@12/bin" $path)
-source /Users/georgezamfir/.ghcup/env
+path=("/Applications/Racket v8.14/bin" $path)

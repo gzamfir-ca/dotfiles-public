@@ -11,32 +11,18 @@
 - If you are on apple architecture setup environment like so:
 
 ```
-❯ cd ~
-❯ mv dotfiles-public ~/.dotfiles
-❯ ln -sfn ~/.dotfiles/arm64/gitconfig ~/.gitconfig
-❯ ln -sfn ~/.dotfiles/arm64/zprofile ~/.zprofile
-❯ ln -sfn ~/.dotfiles/arm64/zshrc ~/.zshrc
-❯ brew bundle install --file=~/.dotfiles/arm64/Brewfile
+❯ ln -sfn ~/dotfiles-public/arm64/gitconfig ~/.gitconfig
+❯ ln -sfn ~/dotfiles-public/arm64/zprofile ~/.zprofile
+❯ ln -sfn ~/dotfiles-public/arm64/zshrc ~/.zshrc
+❯ brew bundle install --file=~/dotfiles-public/arm64/Brewfile
 ```
-
-- If you are on intel architecture setup environment like so:
-
-```
-❯ cd ~
-❯ mv dotfiles-public ~/.dotfiles
-❯ ln -sfn ~/.dotfiles/i386/gitconfig ~/.gitconfig
-❯ ln -sfn ~/.dotfiles/i386/zprofile ~/.zprofile
-❯ ln -sfn ~/.dotfiles/i386/zshrc ~/.zshrc
-❯ brew bundle install --file=~/.dotfiles/i386/Brewfile
-```
-
 - Configure editing from the command line using vim like so:
 
 ```
 ❯ mkdir -pv ~/.vim/autoload
 ❯ mkdir -pv ~/.vim/files/back
 ❯ mkdir -pv ~/.vim/files/swap
-❯ ln -sfn ~/.dotfiles/vimrc ~/.vimrc
+❯ ln -sfn ~/dotfiles-public/arm64/vimrc ~/.vimrc
 ```
 
 then download the plug.vim in the autoload folder and do :PlugInstall
@@ -45,13 +31,13 @@ then download the plug.vim in the autoload folder and do :PlugInstall
 
 ```
 ❯ cd /usr/local/bin
-❯ ln -sfn ~/.dotfiles/bin/zsync ./zsync
+❯ ln -sfn ~/dotfiles-public/bin/zsync ./zsync
 ```
 
 - Finally install & configure code using the following steps:
 
 ```
 ❯ cd ~/Library/Application\ Support/Code/User
-❯ ln -sfn ~/.dotfiles/code/settings.json ./settings.json
+❯ ln -sfn ~/dotfiles-public/code/settings.json ./settings.json
 ❯ code --install-extension <extension_name>
 ```

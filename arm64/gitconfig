@@ -8,10 +8,8 @@
 	cm="!git add -A && git commit -m"
 	co="!git checkout"
 	dr="!git add -A --dry-run"
-	dt="!git difftool"
 	fe="!git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)"
 	lg="!git log --oneline --graph --decorate --stat"
-	mt="!git mergetool"
 	ne="!git init -b main && git add -A && git commit -m"
 	pf="!git push -f origin $(git rev-parse --abbrev-ref HEAD)"
 	pu="!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
@@ -25,20 +23,8 @@
 	helper = osxkeychain
 [diff]
 	algorithm = patience
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [init]
 	defaultBranch = main
-[merge]
-	tool = Kaleidoscope
-[mergetool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [pull]
 	rebase = true
 [rebase]

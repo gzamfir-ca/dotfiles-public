@@ -3,17 +3,14 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
-    "erb"
+    "typescriptreact"
   ],
   "auto-rename-tag.activationOnLanguage": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
-    "erb"
+    "typescriptreact"
   ],
-  "css.validate": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
@@ -34,8 +31,7 @@
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "erb": "html"
+    "typescript": "typescriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
   "eslint.probe": [
@@ -44,43 +40,23 @@
     "typescript",
     "typescriptreact"
   ],
-  "extensions.ignoreRecommendations": true,
-  "files.associations": {
-    ".css": "tailwindcss",
-    ".env*": "shellscript"
-  },
   "files.autoSave": "afterDelay",
   "files.encoding": "utf8",
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.path": "/usr/bin/git",
-  "haskell.manageHLS": "GHCup",
   "[javascript]": {
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
       "source.fixAll.eslint"
-    ],
-    "editor.formatOnSave": false
+    ]
   },
   "[javascriptreact]": {
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
       "source.fixAll.eslint"
-    ],
-    "editor.formatOnSave": false
-  },
-  "npm-intellisense.scanDevDependencies": true,
-  "npm-intellisense.showBuildInLibs": true,
-  "[ruby]": {
-    "editor.defaultFormatter": "castwide.solargraph"
-  },
-  "solargraph.diagnostics": true,
-  "solargraph.formatting": true,
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "erb": "html"
+    ]
   },
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
@@ -88,19 +64,19 @@
   "terminal.integrated.fontFamily": "FiraCode-Retina",
   "terminal.integrated.fontSize": 13,
   "[typescript]": {
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
       "source.fixAll.eslint"
-    ],
-    "editor.formatOnSave": false
+    ]
   },
   "[typescriptreact]": {
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
       "source.fixAll.eslint"
-    ],
-    "editor.formatOnSave": false
+    ]
   },
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "ayu"
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato"
 }
