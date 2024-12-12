@@ -94,4 +94,4 @@ alias xt='exit'
 path=("/opt/homebrew/opt/postgresql@16/bin" $path)
 
 # Configure racket environment
-path=("/Applications/Racket v8.14/bin" $path)
+path=("/Applications/Racket v8.15/bin" $path)
