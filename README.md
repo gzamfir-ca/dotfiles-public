@@ -11,18 +11,19 @@
 - If you are on apple architecture setup environment like so:
 
 ```
-❯ ln -sfn ~/dotfiles-public/arm64/gitconfig ~/.gitconfig
-❯ ln -sfn ~/dotfiles-public/arm64/zprofile ~/.zprofile
-❯ ln -sfn ~/dotfiles-public/arm64/zshrc ~/.zshrc
+❯ cp -nv ~/dotfiles-public/arm64/gitconfig ~/.gitconfig
+❯ cp -nv ~/dotfiles-public/arm64/zprofile ~/.zprofile
+❯ cp -nv ~/dotfiles-public/arm64/zshrc ~/.zshrc
 ❯ brew bundle install --file=~/dotfiles-public/arm64/Brewfile
 ```
+
 - Configure editing from the command line using vim like so:
 
 ```
 ❯ mkdir -pv ~/.vim/autoload
 ❯ mkdir -pv ~/.vim/files/back
 ❯ mkdir -pv ~/.vim/files/swap
-❯ ln -sfn ~/dotfiles-public/arm64/vimrc ~/.vimrc
+❯ cp -nv ~/dotfiles-public/arm64/vimrc ~/.vimrc
 ```
 
 then download the plug.vim in the autoload folder and do :PlugInstall
@@ -31,13 +32,13 @@ then download the plug.vim in the autoload folder and do :PlugInstall
 
 ```
 ❯ cd /usr/local/bin
-❯ ln -sfn ~/dotfiles-public/bin/zsync ./zsync
+❯ cp -nv ~/dotfiles-public/bin/zsync ./zsync
 ```
 
 - Finally install & configure code using the following steps:
 
 ```
 ❯ cd ~/Library/Application\ Support/Code/User
-❯ ln -sfn ~/dotfiles-public/code/settings.json ./settings.json
+❯ cp -nv ~/dotfiles-public/code/settings.json ./settings.json
 ❯ code --install-extension <extension_name>
 ```
