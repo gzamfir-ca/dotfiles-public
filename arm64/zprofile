@@ -11,6 +11,6 @@ eval "$(nodenv init -)"
 eval "$(rbenv init -)"
 
 # Configure java environment
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home --version 21)
 export M2_HOME=$(readlink -f /opt/homebrew/opt/maven/libexec)
 export GRADLE_HOME=$(readlink -f /opt/homebrew/opt/gradle/libexec)
