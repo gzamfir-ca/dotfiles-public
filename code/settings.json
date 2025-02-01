@@ -12,6 +12,7 @@
     "typescriptreact"
   ],
   "editor.bracketPairColorization.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.fontFamily": "FiraCode-Retina",
@@ -23,6 +24,7 @@
   "editor.linkedEditing": true,
   "editor.renderWhitespace": "trailing",
   "editor.rulers": [80],
+  "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
