@@ -1,24 +1,3 @@
-[alias]
-	ad="!git add -A && git commit --amend --no-edit"
-	am="!git commit --amend -m"
-	ao="!git remote add origin"
-	bl="!git branch --all"
-	bn="!git checkout -b"
-	br="!git branch -M"
-	cm="!git add -A && git commit -m"
-	co="!git checkout"
-	dr="!git add -A --dry-run"
-	fe="!git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)"
-	lg="!git log --oneline --graph --decorate --stat"
-	ne="!git init -b main && git add -A && git commit -m"
-	pf="!git push -f origin $(git rev-parse --abbrev-ref HEAD)"
-	pu="!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
-	re="!git remote --verbose"
-	rp="!git remote prune origin"
-	st="!git status --verbose"
-	tg="!git tag -a -m"
-[core]
-	editor = code --wait
 [credential]
 	helper = osxkeychain
 [diff]

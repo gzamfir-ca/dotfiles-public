@@ -1,16 +1,4 @@
 # Configure package manager
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Configure brew environment
 export HOMEBREW_NO_INSTALL_FROM_API=1
 
-# Configure node environment
-eval "$(nodenv init -)"
-
-# Configure ruby environment
-eval "$(rbenv init -)"
-
-# Configure java environment
-export JAVA_HOME=$(/usr/libexec/java_home --version 21)
-export M2_HOME=$(readlink -f /opt/homebrew/opt/maven/libexec)
-export GRADLE_HOME=$(readlink -f /opt/homebrew/opt/gradle/libexec)

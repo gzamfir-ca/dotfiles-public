@@ -47,6 +47,9 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "[fish]": {
+    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+  },
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
