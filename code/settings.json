@@ -67,7 +67,8 @@
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "fish",
-  "terminal.integrated.fontFamily": "'Cascadia Code'",
+  "terminal.integrated.fontFamily": "'MesloLGS Nerd Font'",
+  "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontSize": 13,
   "[typescript]": {
     "editor.formatOnSave": false,
