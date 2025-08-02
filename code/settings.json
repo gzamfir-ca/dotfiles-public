@@ -22,6 +22,7 @@
   "editor.guides.bracketPairs": true,
   "editor.indentSize": 2,
   "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
   "editor.renderWhitespace": "trailing",
   "editor.rulers": [80],
   "editor.smoothScrolling": true,
