@@ -1,5 +1,9 @@
 if status is-interactive
 
+    # Disable sh welcome message
+    function fish_greeting
+    end
+
     # Configure brew environment
     /opt/homebrew/bin/brew shellenv | source
     set -gx HOMEBREW_NO_INSTALL_FROM_API 1
