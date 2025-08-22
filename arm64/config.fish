@@ -18,7 +18,7 @@ if status is-interactive
     rbenv init - | source
 
     # Configure lisp environment
-    fish_add_path --path /Applications/Racket\ v8.17/bin
+    fish_add_path --path /Applications/Racket\ v8.18/bin
 
     # Configure fish environment
     set -gx CLICOLOR 1
