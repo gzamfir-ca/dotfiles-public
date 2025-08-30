@@ -1,5 +1,6 @@
 tap "homebrew/core"
 tap "spring-cli-projects/spring-cli"
+brew "fd"
 brew "fish"
 brew "gh"
 brew "gmp"
