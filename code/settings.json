@@ -86,5 +86,6 @@
     ]
   },
   "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-macchiato"
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.startupEditor": "none"
 }
