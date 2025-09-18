@@ -6,14 +6,14 @@
 
 ### Usage
 
-- Expects brew, bundle, code, git, iterm2, rsync, vim, zshell
+- Expects brew, bundle, code, git, iterm2, rsync, vim and fish
 
 - If you are on apple architecture setup environment like so:
 
 ```
 ❯ cp -nv ~/dotfiles-public/arm64/gitconfig ~/.gitconfig
 ❯ cp -nv ~/dotfiles-public/arm64/zprofile ~/.zprofile
-❯ cp -nv ~/dotfiles-public/arm64/zshrc ~/.zshrc
+❯ cp -nv ~/dotfiles-public/arm64/config.fish ~/.config/fish/config.fish
 ❯ brew bundle install --file=~/dotfiles-public/arm64/Brewfile
 ```
 
@@ -26,7 +26,7 @@
 ❯ cp -nv ~/dotfiles-public/arm64/vimrc ~/.vimrc
 ```
 
-then download the plug.vim in the autoload folder and do :PlugInstall
+- Bring plug.vim in the autoload folder and do :PlugInstall
 
 - Install & configure custom command line utilities like so:
 
@@ -35,10 +35,9 @@ then download the plug.vim in the autoload folder and do :PlugInstall
 ❯ cp -nv ~/dotfiles-public/bin/zsync ./zsync
 ```
 
-- Finally install & configure code using the following steps:
+- Finally update code configuration using the following steps:
 
 ```
 ❯ cd ~/Library/Application\ Support/Code/User
 ❯ cp -nv ~/dotfiles-public/code/settings.json ./settings.json
-❯ code --install-extension <extension_name>
 ```
