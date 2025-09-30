@@ -27,7 +27,7 @@ if status is-interactive
     set -gx PAGER less
 
     # Configure java environment
-    set -gx JAVA_HOME (/usr/libexec/java_home --version 21)
+    set -gx JAVA_HOME (/usr/libexec/java_home --version 25)
     set -gx M2_HOME (readlink -f /opt/homebrew/opt/maven/libexec)
     set -gx GRADLE_HOME (readlink -f /opt/homebrew/opt/gradle/libexec)
 
