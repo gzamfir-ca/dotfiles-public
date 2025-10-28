@@ -32,22 +32,24 @@ if status is-interactive
     set -gx GRADLE_HOME (readlink -f /opt/homebrew/opt/gradle/libexec)
 
     # Add brew cmd abbreviations
-    abbr --add brewin 'brew install --verbose'
-    abbr --add brewls 'brew list --versions (brew list --installed-on-request)'
-    abbr --add brewrm 'brew uninstall --verbose'
-    abbr --add brewup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
-
-    # Add node cmd abbreviations
-    abbr --add nodein 'npm install --global'
-    abbr --add nodels 'npm ls --global --depth 1'
-    abbr --add noderm 'npm uninstall --global'
-    abbr --add nodeup 'npm install --global npm && npm update --global'
+    abbr --add brwin 'brew install --verbose'
+    abbr --add brwls 'brew list --versions (brew list --installed-on-request)'
+    abbr --add brwrm 'brew uninstall --verbose'
+    abbr --add brwup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
     # Add ruby cmd abbreviations
-    abbr --add rubyin 'gem install'
-    abbr --add rubyls 'gem list --local --no-details | grep -v "default:"'
-    abbr --add rubyrm 'gem uninstall'
-    abbr --add rubyup 'gem update --system && gem update && gem cleanup'
+    abbr --add be 'bundle exec'
+    abbr --add bi 'bundle install'
+    abbr --add gemin 'gem install'
+    abbr --add gemls 'gem list --local --no-details | grep -v "default:"'
+    abbr --add gemrm 'gem uninstall'
+    abbr --add gemup 'gem update --system && gem update && gem cleanup'
+
+    # Add node cmd abbreviations
+    abbr --add npmin 'npm install --global'
+    abbr --add npmls 'npm ls --global --depth 1'
+    abbr --add npmrm 'npm uninstall --global'
+    abbr --add npmup 'npm install --global npm && npm update --global'
 
     # Add git args abbreviations
     abbr --command git ad 'add -A && git commit --amend --no-edit'
