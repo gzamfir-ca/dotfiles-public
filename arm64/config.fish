@@ -18,7 +18,7 @@ if status is-interactive
     rbenv init - | source
 
     # Configure lisp environment
-    fish_add_path --path /Applications/Racket\ v8.18/bin
+    fish_add_path --path /Applications/Racket\ v9.0/bin
 
     # Configure fish environment
     set -gx CLICOLOR 1
@@ -96,5 +96,4 @@ if status is-interactive
     function md --wraps mkdir --description 'alias md=mkdir -pv'
         command mkdir -pv $argv
     end
-
 end
