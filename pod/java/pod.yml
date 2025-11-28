@@ -8,6 +8,7 @@ options:
   - package: com.me.demo
   - project-name: demo
   - java-version: 25
+  - no-comments:
   - no-incubating:
   - no-split-project:
   - overwrite:
