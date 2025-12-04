@@ -1,12 +1,11 @@
 ---
-created: !!timestamp 2025-11-26 19:52:50
 description: demo boot development environment
 options:
-  - d: type=gradle-project
-  - d: dependencies=web,devtools
-  - d: baseDir=app
-  - d: groupId=com.me
-  - d: javaVersion=25
-  - d: applicationName=App
-  - d: packageName=com.me.demo
+- d: type=gradle-project
+- d: dependencies=web,devtools
+- d: baseDir=app
+- d: groupId=com.me
+- d: javaVersion=25
+- d: applicationName=App
+- d: packageName=com.me.demo
 runtime: boot

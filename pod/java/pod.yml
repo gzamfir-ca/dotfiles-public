@@ -1,15 +1,14 @@
 ---
-created: !!timestamp 2025-11-18 19:53:38
 description: demo java development environment
 options:
-  - type: java-application
-  - dsl: groovy
-  - test-framework: junit-jupiter
-  - package: com.me.demo
-  - project-name: demo
-  - java-version: 25
-  - no-comments:
-  - no-incubating:
-  - no-split-project:
-  - overwrite:
+- type: java-application
+- dsl: groovy
+- test-framework: junit-jupiter
+- package: com.me.demo
+- project-name: demo
+- java-version: 25
+- no-comments:
+- no-incubating:
+- no-split-project:
+- overwrite:
 runtime: java
