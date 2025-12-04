@@ -96,4 +96,10 @@ if status is-interactive
     function md --wraps mkdir --description 'alias md=mkdir -pv'
         command mkdir -pv $argv
     end
+
+    # Add create pod config file
+    function newpod --description 'creates a new pod config file'
+        printf "---\nruntime: %s" >pod.yml $argv[1]
+    end
+
 end
