@@ -1,11 +1,2 @@
 ---
-description: demo boot development environment
-options:
-- d: type=gradle-project
-- d: dependencies=web,devtools
-- d: baseDir=app
-- d: groupId=com.me
-- d: javaVersion=25
-- d: applicationName=App
-- d: packageName=com.me.demo
 runtime: boot
