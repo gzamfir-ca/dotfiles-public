@@ -99,7 +99,7 @@ if status is-interactive
 
     # Add create pod config file
     function newpod --description 'creates a new pod config file'
-        printf "---\nruntime: %s" >pod.yml $argv[1]
+        printf "---\npodname: %s\nruntime: %s\n" >pod.yml $argv[1] $argv[2]
     end
 
 end
