@@ -65,6 +65,14 @@
       "source.fixAll.eslint"
     ]
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.formatDocument",
+      "source.fixAll.markdownlint"
+    ]
+  },
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "fish",
@@ -86,6 +94,5 @@
     ]
   },
   "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-macchiato",
-  "workbench.startupEditor": "none"
+  "workbench.iconTheme": "catppuccin-macchiato"
 }
