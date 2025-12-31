@@ -1,12 +1,10 @@
 # Overall System Settings
 
-## Purpose
+A repository for development environment configuration files
 
-- Hosts various development environment configuration files
+## Installation
 
-## Usage
-
-- Expects brew, bundle, code, git, iterm2, rsync, vim and fish
+Expects brew, bundle, code, git, iterm2, rsync, vim and fish
 
 - If you are on apple architecture setup environment like so:
 
