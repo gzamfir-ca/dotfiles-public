@@ -33,7 +33,7 @@ if status is-interactive
 
     # Add brew cmd abbreviations
     abbr --add brwin 'brew install --verbose'
-    abbr --add brwls 'brew list --versions (brew list --installed-on-request)'
+    abbr --add brwls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
     abbr --add brwrm 'brew uninstall --verbose'
     abbr --add brwup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
