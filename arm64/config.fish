@@ -72,6 +72,12 @@ if status is-interactive
     abbr --command git st 'status --verbose'
     abbr --command git tg 'tag -a -m'
 
+    # Goto most used directories
+    abbr --add gtdev 'cd ~/Developer'
+    abbr --add gtdld 'cd ~/Downloads'
+    abbr --add gtdoc 'cd ~/Documents'
+    abbr --add gtdsk 'cd ~/Desktop'
+
     # Make system commands safer
     function cp --wraps cp --description 'alias cp=cp -nv'
         command cp -nv $argv
