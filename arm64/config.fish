@@ -109,4 +109,8 @@ if status is-interactive
         printf "---\npodname: %s\nruntime: %s\n" >pod.yml $argv[1] $argv[2]
     end
 
+    # Repo command abbreviations
+    abbr --add repocp 'gh repo clone'
+    abbr --add repols 'gh repo list'
+    abbr --add repovw 'gh repo view --web'
 end
