@@ -77,7 +77,7 @@ if status is-interactive
     abbr --add be 'bundle exec'
     abbr --add bi 'bundle install'
     abbr --add bo 'bundle outdated'
-    abbr --add bu 'bundle update'
+    abbr --add bu 'bundle update --all'
 
     # Goto most used directories
     abbr --add gtdev 'cd ~/Developer'
