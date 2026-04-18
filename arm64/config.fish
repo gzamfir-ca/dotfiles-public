@@ -32,20 +32,21 @@ if status is-interactive
     set -gx GRADLE_HOME (readlink -f /opt/homebrew/opt/gradle/libexec)
 
     # Add brew cmd abbreviations
+    abbr --add brwck 'brew doctor --debug'
     abbr --add brwin 'brew install --verbose'
     abbr --add brwls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
     abbr --add brwrm 'brew uninstall --verbose'
     abbr --add brwup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
     # Add ruby cmd abbreviations
-    abbr --add be 'bundle exec'
-    abbr --add bi 'bundle install'
+    abbr --add gemck 'gem check'
     abbr --add gemin 'gem install'
     abbr --add gemls 'gem list --local --no-details | grep -v "default:"'
     abbr --add gemrm 'gem uninstall'
     abbr --add gemup 'gem update --system && gem update && gem cleanup'
 
     # Add node cmd abbreviations
+    abbr --add npmck 'npm doctor'
     abbr --add npmin 'npm install --global'
     abbr --add npmls 'npm ls --global --depth 1'
     abbr --add npmrm 'npm uninstall --global'
@@ -71,6 +72,12 @@ if status is-interactive
     abbr --command git rp 'remote prune origin'
     abbr --command git st 'status --verbose'
     abbr --command git tg 'tag -a -m'
+
+    # Add common bundle commands
+    abbr --add be 'bundle exec'
+    abbr --add bi 'bundle install'
+    abbr --add bo 'bundle outdated'
+    abbr --add bu 'bundle update'
 
     # Goto most used directories
     abbr --add gtdev 'cd ~/Developer'
