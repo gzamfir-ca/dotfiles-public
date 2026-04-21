@@ -111,6 +111,10 @@ if status is-interactive
         command mkdir -pv $argv
     end
 
+    function tr --wraps tree --description 'alias tr=tree -a'
+        command tree -a $argv
+    end
+
     # Add create pod config file
     function newpod --description 'creates a new pod config file'
         printf "---\npodname: %s\nruntime: %s\n" >pod.yml $argv[1] $argv[2]
