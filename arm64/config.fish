@@ -111,7 +111,7 @@ if status is-interactive
         command mkdir -pv $argv
     end
 
-    function tr --wraps tree --description 'alias tr=tree -a'
+    function tree --wraps tree --description 'alias tr=tree -a'
         command tree -a $argv
     end
 
