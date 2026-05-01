@@ -111,7 +111,15 @@ if status is-interactive
         command mkdir -pv $argv
     end
 
-    function tree --wraps tree --description 'alias tr=tree -a'
+    function ms --wraps mkdir --description 'alias ms=mkdir -pv (seq)'
+        command mkdir -pv $argv[1](seq -f "%02g" $argv[2])
+    end
+
+    function mt --wraps mkdir --description 'alias mt=mkdir -pv (date) && cd'
+        command mkdir -pv (date +%Y%m%d) && cd (date +%Y%m%d)
+    end
+
+    function tree --wraps tree --description 'alias tree=tree -a'
         command tree -a $argv
     end
 
