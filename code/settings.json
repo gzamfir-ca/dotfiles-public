@@ -3,13 +3,13 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "auto-rename-tag.activationOnLanguage": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -30,18 +30,18 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.quickSuggestions": {
-    "strings": "on"
+    "strings": "on",
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
+    "typescript": "typescriptreact",
   },
   "emmet.triggerExpansionOnTab": true,
   "eslint.probe": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "files.autoSave": "afterDelay",
   "files.encoding": "utf8",
@@ -49,29 +49,29 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+    "editor.defaultFormatter": "bmalehorn.vscode-fish",
   },
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
-      "source.fixAll.eslint"
-    ]
+      "source.fixAll.eslint",
+    ],
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
-      "source.fixAll.eslint"
-    ]
+      "source.fixAll.eslint",
+    ],
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
-      "source.fixAll.markdownlint"
-    ]
+      "source.fixAll.markdownlint",
+    ],
   },
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
@@ -79,20 +79,21 @@
   "terminal.integrated.fontFamily": "'MesloLGS Nerd Font'",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontSize": 13,
+  "todo-tree.ripgrep.ripgrep": "opt/homebrew/bin/rg",
   "[typescript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
-      "source.fixAll.eslint"
-    ]
+      "source.fixAll.eslint",
+    ],
   },
   "[typescriptreact]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
       "source.formatDocument",
-      "source.fixAll.eslint"
-    ]
+      "source.fixAll.eslint",
+    ],
   },
   "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-macchiato"
+  "workbench.iconTheme": "catppuccin-macchiato",
 }
