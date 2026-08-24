@@ -32,58 +32,34 @@ if status is-interactive
     set -gx GRADLE_HOME (readlink -f /opt/homebrew/opt/gradle/libexec)
 
     # Add brew cmd abbreviations
-    abbr --add brwck 'brew doctor --debug'
-    abbr --add brwin 'brew install --verbose'
     abbr --add brwls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
-    abbr --add brwrm 'brew uninstall --verbose'
     abbr --add brwup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
     # Add ruby cmd abbreviations
-    abbr --add gemck 'gem check'
-    abbr --add gemin 'gem install'
     abbr --add gemls 'gem list --local --no-details | grep -v "default:"'
-    abbr --add gemrm 'gem uninstall'
     abbr --add gemup 'gem update --system && gem update && gem cleanup'
 
     # Add node cmd abbreviations
-    abbr --add npmck 'npm doctor'
-    abbr --add npmin 'npm install --global'
     abbr --add npmls 'npm ls --global --depth 1'
-    abbr --add npmrm 'npm uninstall --global'
     abbr --add npmup 'npm install --global npm && npm update --global'
 
     # Add git args abbreviations
     abbr --command git ad 'add -A && git commit --amend --no-edit'
     abbr --command git am 'commit --amend -m'
-    abbr --command git ao 'remote add origin'
-    abbr --command git bl 'branch --all'
-    abbr --command git bn 'checkout -b'
-    abbr --command git br 'branch -M'
     abbr --command git cm 'add -A && git commit -m'
     abbr --command git co checkout
     abbr --command git dr 'add -A --dry-run'
     abbr --command git fe 'fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
     abbr --command git lg 'log --oneline --graph --decorate --stat'
     abbr --command git ll 'log origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
-    abbr --command git ne 'init -b main && git add -A && git commit -m'
     abbr --command git pf 'push -f origin $(git rev-parse --abbrev-ref HEAD)'
     abbr --command git pu 'push -u origin $(git rev-parse --abbrev-ref HEAD)'
-    abbr --command git re 'remote --verbose'
-    abbr --command git rp 'remote prune origin'
     abbr --command git st 'status --verbose'
-    abbr --command git tg 'tag -a -m'
 
     # Add common bundle commands
     abbr --add be 'bundle exec'
-    abbr --add bi 'bundle install'
     abbr --add bo 'bundle outdated'
     abbr --add bu 'bundle update --all'
-
-    # Goto most used directories
-    abbr --add gtdev 'cd ~/Developer'
-    abbr --add gtdld 'cd ~/Downloads'
-    abbr --add gtdoc 'cd ~/Documents'
-    abbr --add gtdsk 'cd ~/Desktop'
 
     # Make system commands safer
     function cp --wraps cp --description 'alias cp=cp -nv'
@@ -127,9 +103,4 @@ if status is-interactive
     function newpod --description 'creates a new pod config file'
         printf "---\npodname: %s\nruntime: %s\n" >pod.yml $argv[1] $argv[2]
     end
-
-    # Repo command abbreviations
-    abbr --add repocp 'gh repo clone'
-    abbr --add repols 'gh repo list'
-    abbr --add repovw 'gh repo view --web'
 end
