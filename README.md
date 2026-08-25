@@ -23,17 +23,11 @@ Expects brew, bundle, code, git, iterm2, rsync, vim and fish
 ❯ mkdir -pv ~/.vim/autoload
 ❯ mkdir -pv ~/.vim/files/back
 ❯ mkdir -pv ~/.vim/files/swap
+❯ mkdir -pv ~/.vim/files/undo
 ❯ cp -nv ~/dotfiles-public/arm64/vimrc ~/.vimrc
 ```
 
 - Bring plug.vim in the autoload folder and do :PlugInstall
-
-- Install & configure custom command line utilities like so:
-
-```shell
-❯ cd /usr/local/bin
-❯ cp -nv ~/dotfiles-public/bin/zsync ./zsync
-```
 
 - Finally update vs code configuration using these steps:
 
