@@ -31,17 +31,34 @@ if status is-interactive
     set -gx M2_HOME (readlink -f /opt/homebrew/opt/maven/libexec)
     set -gx GRADLE_HOME (readlink -f /opt/homebrew/opt/gradle/libexec)
 
+    # Make system commands safer
+    abbr cp 'cp -nv'
+    abbr mv 'mv -nv'
+    abbr rm 'rm -iv'
+
+    # Add easier system commands
+    abbr cl clear
+    abbr cx 'clear && exit'
+    abbr gt 'cd (git rev-parse --show-toplevel)'
+    abbr md 'mkdir -pv'
+    abbr ta 'tree -a'
+
+    # Add common bundle commands
+    abbr be 'bundle exec'
+    abbr bo 'bundle outdated'
+    abbr bu 'bundle update --all'
+
     # Add brew cmd abbreviations
-    abbr --add brwls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
-    abbr --add brwup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
+    abbr bls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
+    abbr bup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
     # Add ruby cmd abbreviations
-    abbr --add gemls 'gem list --local --no-details | grep -v "default:"'
-    abbr --add gemup 'gem update --system && gem update && gem cleanup'
+    abbr gls 'gem list --local --no-details | grep -v "default:"'
+    abbr gup 'gem update --system && gem update && gem cleanup'
 
     # Add node cmd abbreviations
-    abbr --add npmls 'npm ls --global --depth 1'
-    abbr --add npmup 'npm install --global npm && npm update --global'
+    abbr nls 'npm ls --global --depth 1'
+    abbr nup 'npm install --global npm && npm update --global'
 
     # Add git args abbreviations
     abbr --command git ad 'add -A && git commit --amend --no-edit'
@@ -55,49 +72,6 @@ if status is-interactive
     abbr --command git pf 'push -f origin $(git rev-parse --abbrev-ref HEAD)'
     abbr --command git pu 'push -u origin $(git rev-parse --abbrev-ref HEAD)'
     abbr --command git st 'status --verbose'
-
-    # Add common bundle commands
-    abbr --add be 'bundle exec'
-    abbr --add bo 'bundle outdated'
-    abbr --add bu 'bundle update --all'
-
-    # Make system commands safer
-    function cp --wraps cp --description 'alias cp=cp -nv'
-        command cp -nv $argv
-    end
-
-    function mv --wraps mv --description 'alias mv=mv -nv'
-        command mv -nv $argv
-    end
-
-    function rm --wraps rm --description 'alias rm=rm -iv'
-        command rm -iv $argv
-    end
-
-    # Add easier system commands
-    function gt --description 'alias gt=cd (git rev-parse --show-toplevel)'
-        cd (git rev-parse --show-toplevel)
-    end
-
-    function mc --wraps mkdir --description 'alias mc=mkdir -pv && cd'
-        command mkdir -pv $argv && cd $argv
-    end
-
-    function md --wraps mkdir --description 'alias md=mkdir -pv'
-        command mkdir -pv $argv
-    end
-
-    function ms --wraps mkdir --description 'alias ms=mkdir -pv (seq)'
-        command mkdir -pv $argv[1](seq -f "%02g" $argv[2])
-    end
-
-    function mt --wraps mkdir --description 'alias mt=mkdir -pv (date) && cd'
-        command mkdir -pv (date +%Y%m%d) && cd (date +%Y%m%d)
-    end
-
-    function tree --wraps tree --description 'alias tree=tree -a'
-        command tree -a $argv
-    end
 
     # Add create pod config file
     function newpod --description 'creates a new pod config file'
