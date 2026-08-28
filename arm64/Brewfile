@@ -1,5 +1,6 @@
 tap "homebrew/cask"
 tap "homebrew/core"
+brew "bat"
 brew "fd"
 brew "fish"
 brew "gh"
