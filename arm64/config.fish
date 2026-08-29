@@ -66,13 +66,13 @@ if status is-interactive
     abbr --command git am 'commit --amend -m'
     abbr --command git cm 'add -A && git commit -m'
     abbr --command git co checkout
-    abbr --command git df 'diff origin/$(git rev-parse --abbrev-ref HEAD)..HEAD'
+    abbr --command git df 'diff origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
     abbr --command git dr 'add -A --dry-run'
-    abbr --command git fe 'fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
+    abbr --command git fe 'fetch --all && git rebase origin/(git rev-parse --abbrev-ref HEAD)'
     abbr --command git lg 'log --oneline --graph --decorate --stat'
-    abbr --command git ll 'log origin/$(git rev-parse --abbrev-ref HEAD)..HEAD'
-    abbr --command git pf 'push -f origin $(git rev-parse --abbrev-ref HEAD)'
-    abbr --command git pu 'push -u origin $(git rev-parse --abbrev-ref HEAD)'
+    abbr --command git ll 'log origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
+    abbr --command git pf 'push -f origin (git rev-parse --abbrev-ref HEAD)'
+    abbr --command git pu 'push -u origin (git rev-parse --abbrev-ref HEAD)'
     abbr --command git st 'status --verbose'
 
     # Add create pod config file
