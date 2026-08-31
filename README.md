@@ -4,7 +4,7 @@ A repository for development environment configuration files
 
 ## Installation
 
-Expects brew, bundle, code, git, iterm2, rsync, vim and fish
+Expects brew, bundle, code, git, iterm2, emacs, vim and fish
 
 - If you are on apple architecture setup environment like so:
 
@@ -16,6 +16,8 @@ Expects brew, bundle, code, git, iterm2, rsync, vim and fish
 ❯ mkdir -pv ~/.bundle
 ❯ cp -nv ~/dotfiles-public/bundle/config ~/.bundle
 ```
+
+- Finally install the color theme with raco package manager
 
 - Configure editing from the command line using vim like so:
 
@@ -35,3 +37,15 @@ Expects brew, bundle, code, git, iterm2, rsync, vim and fish
 ❯ cd ~/Library/Application\ Support/Code/User
 ❯ cp -nv ~/dotfiles-public/code/settings.json ./settings.json
 ```
+
+- Configure system wide editing with emacs-plus-app like so:
+
+```shell
+❯ mkdir -pv ~/.config/emacs
+❯ mkdir -pv ~/.config/emacs/files/back
+❯ mkdir -pv ~/.config/emacs/files/swap
+❯ mkdir -pv ~/.config/emacs/files/undo
+❯ cp -nv ~/dotfiles-public/arm64/init.el ~/.config/emacs/init.el
+```
+
+- Finally install the color theme from the melpa repository
