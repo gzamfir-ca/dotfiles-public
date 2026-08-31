@@ -37,6 +37,8 @@
                       :family "Fira Code"
                       :height 130))
 
+(global-hl-line-mode 1)
+
 ;; Setup temp file locations
 (setq make-backup-files t)
 (setq backup-directory-alist
