@@ -1,4 +1,6 @@
 ;;; init.el --- Configuration -*- lexical-binding: t; -*-
+(setq warning-inhibit-types '((files missing-lexbind-cookie)))
+(setq warning-suppress-types '((files missing-lexical-binding)))
 
 ;; Setup the package manager
 (require 'package)
@@ -84,3 +86,9 @@
 (load-theme 'catppuccin :no-confirm)
 (setq catppuccin-flavor 'macchiato)
 (catppuccin-reload)
+
+;; Setup CL & QL environment
+(load (expand-file-name "~/.quicklisp/slime-helper.el"))
+(setq inferior-lisp-program "/opt/homebrew/bin/sbcl")
+(setq split-width-threshold nil)
+(setq split-height-threshold 0)
