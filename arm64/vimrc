@@ -44,3 +44,6 @@ set shell=/bin/bash
 
 " Setup line numbers color
 highlight LineNr ctermfg=244
+
+" Disable markdown for java
+let g:java_ignore_markdown = 1
