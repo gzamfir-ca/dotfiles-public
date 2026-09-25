@@ -50,33 +50,40 @@ if status is-interactive
     abbr bu 'bundle update --all'
 
     # Add brew cmd abbreviations
-    abbr bls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
-    abbr bup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
+    abbr hls 'brew list --versions (brew list --installed-on-request) && brew list --casks --versions'
+    abbr hup 'brew update --verbose && brew upgrade --verbose && brew cleanup --verbose'
 
     # Add ruby cmd abbreviations
-    abbr gls 'gem list --local --no-details | grep -v "default:"'
-    abbr gup 'gem update --system && gem update && gem cleanup'
+    abbr rls 'gem list --local --no-details | grep -v "default:"'
+    abbr rup 'gem update --system && gem update && gem cleanup'
 
     # Add node cmd abbreviations
     abbr nls 'npm ls --global --depth 1'
     abbr nup 'npm install --global npm && npm update --global'
 
-    # Add git args abbreviations
-    abbr --command git ad 'add -A && git commit --amend --no-edit'
-    abbr --command git am 'commit --amend -m'
-    abbr --command git cm 'add -A && git commit -m'
-    abbr --command git co checkout
-    abbr --command git df 'diff origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
-    abbr --command git dr 'add -A --dry-run'
-    abbr --command git fe 'fetch --all && git rebase origin/(git rev-parse --abbrev-ref HEAD)'
-    abbr --command git lg 'log --oneline --graph --decorate --stat'
-    abbr --command git ll 'log origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
-    abbr --command git pf 'push -f origin (git rev-parse --abbrev-ref HEAD)'
-    abbr --command git pu 'push -u origin (git rev-parse --abbrev-ref HEAD)'
-    abbr --command git st 'status --verbose'
+    # Add most used git commands
+    abbr gad 'git add -A && git commit --amend --no-edit'
+    abbr gam 'git commit --amend -m'
+    abbr gcm 'git add -A && git commit -m'
+    abbr gco git checkout
+    abbr gdf 'git diff origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
+    abbr gdr 'git add -A --dry-run'
+    abbr gfe 'git fetch --all && git rebase origin/(git rev-parse --abbrev-ref HEAD)'
+    abbr glg 'git log --oneline --graph --decorate --stat'
+    abbr gll 'git log origin/(git rev-parse --abbrev-ref HEAD)..HEAD'
+    abbr gpf 'git push -f origin (git rev-parse --abbrev-ref HEAD)'
+    abbr gpu 'git push -u origin (git rev-parse --abbrev-ref HEAD)'
+    abbr gst 'git status --verbose'
+
+    # Add multi ... abbreviation
+    function multcd --description 'climb repeatedly one level up'
+        echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+    end
+    abbr dotdot --regex '^\.\.+$' --function multcd
 
     # Add create pod config file
     function newpod --description 'creates a new pod config file'
         printf "---\npodname: %s\nruntime: %s\n" >pod.yml $argv[1] $argv[2]
     end
+
 end
