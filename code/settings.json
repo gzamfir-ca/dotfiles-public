@@ -94,6 +94,7 @@
       "source.fixAll.eslint",
     ],
   },
-  "workbench.iconTheme": "vscode-modern-icons",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.experimental.modernUI": true,
+  "workbench.iconTheme": "catppuccin-mocha",
 }
